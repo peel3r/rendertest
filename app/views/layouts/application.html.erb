@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+  
+    <title>Hello Pipa</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags%>
+  </head>
+
+  <body>
+   <header class="container mt-4 mb-4">
+    <a href="https://google.com">
+      <%= image_tag 'render.png', class: 'mw-100' %>
+    </a>
+  </header>
+    <%= yield %>
+  </body>
+</html>
